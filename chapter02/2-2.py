@@ -1,7 +1,6 @@
 # 导入正则模块库
 import re
 
-
 class CounterWord:
     # 初始化
     def __init__(self, filename):
