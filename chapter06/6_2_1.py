@@ -2,6 +2,20 @@ import sqlite3
 
 conn = sqlite3.connect('data.db')
 
+create_table = '''
+    CREATE TABLE person (
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
+        sex TEXT NOT NULL,
+        age TEXT NOT NULL,
+        department TEXT NOT NULL,
+        telephone TEXT NOT NULL,
+        bz TEXT
+    );
+    '''
+# 执行SQL语句
+conn.execute(create_table)
+
 # 定义一条SQL插入语句
 vsql = 'insert into person(name, sex, age, department, telephone, bz)' \
     'VALUES("李明", "男", "18", "保安部", "13562813857", "新员工")'
@@ -23,10 +37,10 @@ conn.executemany(vsql2, person)
 
 # 定义一条SQL编写的脚本
 vsql3 = '''
-    delete from persion where name="张三";
-    update person set age=22 where name="李四"；
+    delete from person where name="张三";
+    update person set age=22 where name="李四";
     insert into person(name, sex, age, department, telephone, bz)
-    VALUES("王五", "男", "28", "保安部", "13562819123", "新员工"),
+    VALUES("王五", "男", "28", "保安部", "13562819123", "新员工");
 '''
 
 # 执行SQL脚本
