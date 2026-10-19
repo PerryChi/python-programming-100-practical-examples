@@ -54,7 +54,7 @@ if __name__ == '__main__':
     db_name = 'world'
     table_name = 'country'
     user = 'root'
-    password = os.environ.get('PGPASSWORD')
+    password = os.environ.get('DBPASSWORD')
     file_path = Path('__file__').parent / 'chapter06/coutries.xlsx';
     # 调用函数，将一张数据表的全部记录导入到一个Excel文件中
     export_to_excel(host, db_name, table_name, user, password, file_path)

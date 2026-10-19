@@ -71,7 +71,7 @@ if __name__ == '__main__':
     host = 'localhost'
     db_name = 'example6_5'
     user = 'root'
-    password = os.environ.get('PGPASSWORD')
+    password = os.environ.get('DBPASSWORD')
     # 调用备份函数进行备份
     # db_backup(host, db_name, user, password)
     # 为测试，调用函数删除数据库
