@@ -26,7 +26,7 @@ plt.title('双曲线图形', fontsize=20)
 # 设置图例标题，loc制定图例标题的位置
 plt.legend(['正弦曲线', '余弦曲线'], loc='lower left')
 ax1.grid(lw=1, alpha=0.2, color='gray', ls='dashed')
-
+# ==========
 # 将画板区域分成1行3列，第三个参数3表示第三个图形
 # facecolor设置背景色
 ax2 = plt.subplot(1, 3, 3, facecolor='white')
