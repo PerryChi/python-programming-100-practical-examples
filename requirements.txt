@@ -2,3 +2,5 @@ numpy
 openpyxl
 requests
 pymysql
+pyaudio
+pytesseract
