@@ -1,0 +1,4 @@
+{"corpus_no":"7700218086279921635","err_msg":"success.","err_no":0,"result":["北京科技馆。"],"sn":"519827474191792846732"}
+
+“QuickRecorder” is requesting to bypass the system private window picker and directly access your screen and audio.
+This will allow QuickRecorder to record your screen and system audio, including personal or sensitive information that may be visible or audible.
