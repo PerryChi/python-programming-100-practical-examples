@@ -1,4 +1,6 @@
 # coding=utf-8
+# 百度智能云： https://console.bce.baidu.com/ai-engine/speech/overview/index?type=0
+# 语音识别文档： https://cloud.baidu.com/doc/SPEECH/s/Jlbxdezuf
 import base64
 import time
 import requests
