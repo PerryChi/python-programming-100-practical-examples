@@ -15,6 +15,7 @@ def faceDetector():
     print(f"共检测出人脸数: {len(dets)}张")
     # OpenCV 使用 BGR 图像格式
     display_img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    # 循环取得每张脸上的矩形框的坐标，提示: k从0开始计数
     for k, d in enumerate(dets):
         left, top = d.left(), d.top()
         right, bottom = d.right(), d.bottom()

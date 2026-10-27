@@ -2,13 +2,16 @@ from skimage import io
 import dlib
 from pathlib import Path
 
+# 这个源码是书籍原本代码，但例子已过时，dlib库有些API在新版中不存在了，所以运行会报错
+# 请参考14_5_2.py的新实现
+
 # 检测出人脸并用矩形框标出来
 def faceDetector():
     # 生成一个正面人脸检测器
     facedetector = dlib.get_frontal_face_detector()
     # 调用skimage的io子模块读取图片文件
     img = io.imread(Path(__file__).parent / 'face_image.jpeg')
-    # 生成图形显示窗口
+    # 生成图形显示窗口（Windows窗口形式）
     vwin = dlib.image_window()
     # 清除窗口中图片上面叠加的图片
     vwin.clear_overlay()
