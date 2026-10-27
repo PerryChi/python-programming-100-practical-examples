@@ -2,6 +2,9 @@ import dlib
 from skimage import io
 from pathlib import Path
 
+# 这个源码是书籍原本代码，但例子已过时，dlib库有些API在新版中不存在了，所以运行会报错
+# 请参考14_6_2.py的新实现
+
 # 本节编程实例的功能是在上一节检测出的人脸上画出眉毛 眼睛鼻子和嘴的轮廓
 # 检测出人脸，绘制出人脸轮廓
 def facelandmark():
