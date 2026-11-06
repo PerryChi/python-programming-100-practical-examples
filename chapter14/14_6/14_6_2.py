@@ -8,7 +8,6 @@ from pathlib import Path
 def facelandmark():
     # 生成一个正面人脸检测器
     facedetector = dlib.get_frontal_face_detector()
-    # 生成人脸特征预测器对象，进行人脸面部轮廓特征提取
     # 运用已训练好的模型数据进行特征训练
     # 下载地址： https://dlib.net/files/shape_predictor_68_facelandmarks.dat.bz2
     # 现在并解压到当前目录
@@ -16,7 +15,7 @@ def facelandmark():
         Path(__file__).parent
             / 'shape_predictor_68_face_landmarks.dat'
         )
-    # 现在并解压到当前目录
+    # 生成人脸特征预测器对象，进行人脸面部轮廓特征提取
     predictor = dlib.shape_predictor(model_path)
     # 调用skimage的io子模块读取图片文件
     img = io.imread(Path(__file__).parent / 'face_image.jpeg')
